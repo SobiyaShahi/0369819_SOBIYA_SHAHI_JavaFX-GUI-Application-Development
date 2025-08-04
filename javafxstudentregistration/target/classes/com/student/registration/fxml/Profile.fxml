@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fitToWidth="true" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.student.registration.controller.ProfileController">
+   <content>
+      <VBox spacing="30.0">
+         <children>
+            <!-- Header Section -->
+            <HBox alignment="CENTER_LEFT" spacing="20.0" styleClass="modern-page-header">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleBack" styleClass="modern-back-button" text="← Back" />
+                  <VBox spacing="8.0">
+                     <children>
+                        <Label styleClass="modern-page-title" text="Student Profile">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="modern-page-subtitle" text="Manage your personal information" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            
+            <!-- Profile Form Container -->
+            <VBox spacing="35.0" styleClass="modern-profile-form">
+               <children>
+                  <!-- Personal Information Section -->
+                  <VBox spacing="25.0" styleClass="profile-section">
+                     <children>
+                        <Label styleClass="section-header" text="Personal Information">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        
+                        <!-- Row 1: Name and Email -->
+                        <HBox spacing="25.0">
+                           <children>
+                              <VBox spacing="8.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="modern-field-label" text="Full Name" />
+                                    <TextField fx:id="nameField" styleClass="modern-text-field" promptText="Enter your full name" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="8.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="modern-field-label" text="Email Address" />
+                                    <TextField fx:id="emailField" styleClass="modern-text-field" promptText="Enter your email address" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        
+                        <!-- Row 2: DOB and Phone -->
+                        <HBox spacing="25.0">
+                           <children>
+                              <VBox spacing="8.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="modern-field-label" text="Date of Birth" />
+                                    <TextField fx:id="dobField" styleClass="modern-text-field" promptText="YYYY-MM-DD" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="8.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="modern-field-label" text="Phone Number" />
+                                    <TextField fx:id="phoneField" styleClass="modern-text-field" promptText="Enter your phone number" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        
+                        <!-- Row 3: Gender and Nationality -->
+                        <HBox spacing="25.0">
+                           <children>
+                              <VBox spacing="8.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="modern-field-label" text="Gender" />
+                                    <TextField fx:id="genderField" styleClass="modern-text-field" promptText="Enter your gender" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="8.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="modern-field-label" text="Nationality" />
+                                    <TextField fx:id="nationalityField" styleClass="modern-text-field" promptText="Enter your nationality" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        
+                        <!-- Row 4: Address (Full Width) -->
+                        <VBox spacing="8.0">
+                           <children>
+                              <Label styleClass="modern-field-label" text="Address" />
+                              <TextArea fx:id="addressField" styleClass="modern-text-area" prefRowCount="3" promptText="Enter your complete address" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  
+                  <!-- Academic Information Section -->
+                  <VBox spacing="25.0" styleClass="profile-section">
+                     <children>
+                        <Label styleClass="section-header" text="Academic Information">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        
+                        <!-- Academic Fields Row -->
+                        <HBox spacing="25.0">
+                           <children>
+                              <VBox spacing="8.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="modern-field-label" text="Program" />
+                                    <TextField fx:id="programField" styleClass="modern-text-field" promptText="e.g., Computer Science" />
+                                 </children>
+                              </VBox>
+                              <VBox spacing="8.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label styleClass="modern-field-label" text="Semester" />
+                                    <TextField fx:id="semesterField" styleClass="modern-text-field" promptText="e.g., Fall 2024" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  
+                  <!-- Save Button Section -->
+                  <VBox alignment="CENTER" spacing="15.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleSave" styleClass="modern-primary-btn" text="Save Changes">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Label styleClass="modern-page-subtitle" text="Click save to update your profile information" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+   </content>
+</ScrollPane>

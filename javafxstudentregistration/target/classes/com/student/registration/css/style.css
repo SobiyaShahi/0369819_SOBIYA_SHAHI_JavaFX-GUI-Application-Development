@@ -1,0 +1,99 @@
+/* ===== ROOT STYLING FOR EDUCATIONAL VIBE ===== */
+.root {
+  -fx-font-family: "Inter", "Segoe UI", "Roboto", sans-serif;
+  -fx-background-color: linear-gradient(to bottom right, #e0f2ff, #ffffff); /* Soft sky blue to white */
+}
+
+/* ===== UNIVERSAL BOLD TEXT ===== */
+.label {
+  -fx-text-fill: #1e293b; /* Dark slate for contrast */
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+}
+
+/* ===== WELCOME TEXT (e.g. Welcome, Sobiya!) ===== */
+#welcomeText {
+  -fx-font-size: 18px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #1e293b;
+}
+
+/* ===== MODERN INPUT FIELDS ===== */
+.text-field,
+.password-field {
+  -fx-pref-height: 48;
+  -fx-background-radius: 12;
+  -fx-border-radius: 12;
+  -fx-border-color: #cbd5e1;
+  -fx-border-width: 1.5;
+  -fx-padding: 12 16;
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-background-color: #ffffff;
+  -fx-text-fill: #334155;
+  -fx-prompt-text-fill: #94a3b8;
+}
+
+.text-field:hover,
+.password-field:hover {
+  -fx-border-color: #94a3b8;
+  -fx-background-color: #f8fafc;
+}
+
+.text-field:focused,
+.password-field:focused {
+  -fx-border-color: #2563eb;
+  -fx-background-color: #ffffff;
+  -fx-effect: dropshadow(gaussian, rgba(37, 99, 235, 0.25), 4, 0.2, 0, 2);
+}
+
+/* ===== COMBOBOX ===== */
+.combo-box {
+  -fx-background-radius: 12;
+  -fx-border-radius: 12;
+  -fx-border-color: #d1d5db;
+  -fx-border-width: 1.5;
+  -fx-padding: 8 12;
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-background-color: #ffffff;
+  -fx-text-fill: #1e293b;
+}
+
+.combo-box:hover {
+  -fx-border-color: #94a3b8;
+}
+
+/* ===== FLASHCARD STYLE PANELS (KEEPING ORIGINAL DESIGN) ===== */
+.pane,
+.vbox,
+.hbox,
+.grid-pane,
+.anchor-pane {
+  -fx-background-color: #ffffff;
+  -fx-background-radius: 14;
+  -fx-padding: 20;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 10, 0, 0, 2);
+}
+
+/* ===== MODERN BUTTON STYLE (RETAINED) ===== */
+.button {
+  -fx-background-color: linear-gradient(to bottom, #3b82f6, #1e40af); /* Sky blue to dark blue */
+  -fx-text-fill: white;
+  -fx-font-size: 15px;
+  -fx-font-weight: bold;
+  -fx-padding: 12 20;
+  -fx-background-radius: 14;
+  -fx-border-radius: 14;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 6, 0, 0, 2);
+  -fx-cursor: hand;
+  -fx-border-color: transparent;
+}
+
+.button:hover {
+  -fx-background-color: linear-gradient(to bottom, #2563eb, #1e3a8a);
+}
+
+.button:pressed {
+  -fx-background-color: #1e3a8a;
+}

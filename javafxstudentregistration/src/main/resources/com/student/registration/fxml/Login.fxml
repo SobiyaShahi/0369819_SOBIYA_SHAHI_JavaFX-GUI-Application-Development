@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="25.0" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.student.registration.controller.LoginController">
+   <children>
+      <!-- Header Section -->
+      <VBox alignment="CENTER" spacing="15.0" styleClass="login-header">
+         <children>
+            <Label styleClass="simple-title" text="College Link">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      
+      <!-- Login Form Section -->
+      <VBox alignment="CENTER" spacing="20.0" styleClass="login-form">
+         <children>
+            <Label styleClass="form-title" text="Log In to Your Account">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            
+            <VBox spacing="15.0" styleClass="input-container">
+               <children>
+                  <VBox spacing="8.0">
+                     <children>
+                        <Label styleClass="field-label" text="Username" />
+                        <TextField fx:id="usernameField" promptText="Enter your username" styleClass="modern-input" />
+                     </children>
+                  </VBox>
+                  
+                  <VBox spacing="8.0">
+                     <children>
+                        <Label styleClass="field-label" text="Password" />
+                        <PasswordField fx:id="passwordField" promptText="Enter your password" styleClass="modern-input" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            
+            <VBox alignment="CENTER" spacing="15.0" styleClass="button-container">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleLogin" styleClass="primary-btn" text="Sign In" />
+                  <Label styleClass="divider-text" text="Don't have an account?" />
+                  <Button mnemonicParsing="false" onAction="#handleRegister" styleClass="secondary-btn" text="Create New Account" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="40.0" right="40.0" top="30.0" />
+         </padding>
+      </VBox>
+
+      <!-- Footer Section -->
+      <VBox alignment="CENTER" spacing="8.0" styleClass="login-footer">
+         <children>
+            <Label styleClass="footer-text" text="Connect to your campus!!" />
+
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>

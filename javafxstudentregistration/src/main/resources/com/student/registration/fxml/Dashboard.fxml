@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="25.0" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.student.registration.controller.DashboardController">
+   <children>
+      <!-- Header Section -->
+      <VBox alignment="CENTER" spacing="15.0" styleClass="dashboard-header">
+         <children>
+            <Label fx:id="welcomeLabel" styleClass="welcome-title" text="Welcome, Student!">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="statsLabel" styleClass="stats-label" text="Registered Courses: 0 | Available Courses: 8" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      
+      <!-- Main Actions - Linear Layout (1-2-3-4 format) -->
+      <VBox spacing="20.0" styleClass="main-actions">
+         <children>
+            <!-- Row 1: Profile Management -->
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleProfile" prefHeight="100.0" prefWidth="400.0" styleClass="action-button-primary" text="Student Profile" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            
+            <!-- Row 2: Course Registration -->
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleRegisterCourse" prefHeight="100.0" prefWidth="400.0" styleClass="action-button-success" text="Register for Courses" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            
+            <!-- Row 3: View Courses -->
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleViewCourses" prefHeight="100.0" prefWidth="400.0" styleClass="action-button-info" text="View My Courses" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            
+            <!-- Row 4: Statistics -->
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleChart" prefHeight="100.0" prefWidth="400.0" styleClass="action-button-warning" text="Course Statistics" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      
+      <!-- Footer Actions -->
+      <HBox alignment="CENTER" spacing="20.0" styleClass="footer-actions">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleLogout" prefHeight="60.0" prefWidth="180.0" styleClass="footer-button-secondary" text="Logout">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleExit" prefHeight="60.0" prefWidth="180.0" styleClass="footer-button-danger" text="Exit">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>

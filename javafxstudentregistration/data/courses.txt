@@ -1,0 +1,12 @@
+JAVA101;Java Programming Fundamentals;Prof. Rukesh;4;Mon/Wed 9:00-11:00
+PYTHON101;Python Programming;Dr. Vishal;3;Tue/Thu 10:00-11:30
+JS101;JavaScript & Web Development;Prof. Subit;3;Mon/Wed 2:00-3:30
+CPP101;C++ Programming;Dr. Bidhaan;4;Tue/Thu 1:00-2:30
+CSHARP101;C# and .NET Development;Prof. Anmol;4;Wed/Fri 11:00-12:30
+GO101;Go Programming Language;Dr. Bishal;3;Mon/Fri 3:00-4:30
+RUST101;Rust Systems Programming;Prof. Sachin;4;Tue/Thu 9:00-10:30
+SWIFT101;Swift iOS Development;Dr. Kevin;3;Wed/Fri 1:00-2:30
+KOTLIN101;Kotlin Android Development;Prof. Lily;3;Mon/Wed 11:00-12:30
+PHP101;PHP Web Development;Dr. Manil;3;Tue/Thu 3:00-4:30
+RUBY101;Ruby on Rails;Prof. Suraj;3;Wed/Fri 9:00-10:30
+SQL101;Database Programming with SQL;Dr. Dipshan;3;Mon/Wed 1:00-2:30

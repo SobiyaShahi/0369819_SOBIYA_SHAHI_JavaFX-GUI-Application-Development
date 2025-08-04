@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="30.0" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.student.registration.controller.ViewCoursesController">
+   <children>
+      <!-- Header Section -->
+      <HBox alignment="CENTER_LEFT" spacing="20.0" styleClass="modern-page-header">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleBack" styleClass="modern-back-button" text="← Back" />
+            <VBox spacing="8.0">
+               <children>
+                  <Label styleClass="modern-page-title" text="My Registered Courses">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="modern-page-subtitle" text="Manage your enrolled courses" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      
+      <!-- Stats Cards Section -->
+      <HBox alignment="CENTER" spacing="30.0">
+         <children>
+            <VBox alignment="CENTER" spacing="12.0" styleClass="stats-card">
+               <children>
+                  <Label fx:id="totalCoursesLabel" styleClass="stats-number" text="0">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="stats-label" text="Total Courses">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" spacing="12.0" styleClass="stats-card">
+               <children>
+                  <Label fx:id="totalCreditsLabel" styleClass="stats-number" text="0">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label styleClass="stats-label" text="Total Credits">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      
+      <!-- Courses List Section -->
+      <VBox spacing="15.0" styleClass="courses-list-container">
+         <children>
+            <Label styleClass="section-header" text="Enrolled Courses">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            
+            <ScrollPane fitToWidth="true" styleClass="modern-scroll-pane" prefHeight="400.0">
+               <content>
+                  <VBox fx:id="coursesContainer" spacing="15.0">
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      
+      <!-- Action Button Section -->
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleDeleteCourse" styleClass="modern-danger-btn" text="Delete Selected Course">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>

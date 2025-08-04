@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="20.0" styleClass="root-background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.student.registration.controller.ChartController">
+   <children>
+      <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="page-header">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleBack" styleClass="back-button" text="← Back" />
+            <Label styleClass="page-title" text="Course Statistics">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      
+      <Label fx:id="summaryLabel" styleClass="stats-summary" text="Loading statistics..." />
+      
+      <HBox spacing="20.0" alignment="CENTER">
+         <children>
+            <PieChart fx:id="pieChart" prefHeight="300.0" prefWidth="400.0" styleClass="modern-chart" />
+            <BarChart fx:id="barChart" prefHeight="300.0" prefWidth="400.0" styleClass="modern-chart">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </BarChart>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
